@@ -1,0 +1,17 @@
+.firstPara{
+    border-width: 5px;
+    border-style: solid;
+
+}
+.secondPara{
+    border-color: blue;
+    border-width: 10px;
+    border-style: dashed;
+}
+#thirdPara{
+    border-color: violet;
+    border-width: 2 px;
+    border-style:double ;
+    border-radius: 3px;
+    borde
+}

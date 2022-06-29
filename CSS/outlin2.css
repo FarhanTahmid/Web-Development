@@ -1,0 +1,7 @@
+p{
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    outline-style: dashed;
+    margin: 100px;
+}

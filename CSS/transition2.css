@@ -1,0 +1,14 @@
+.box{
+    height: 250px;
+    width: 350px;
+    margin:300px auto;
+    background-color: tomato;
+    transition-property: padding;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);   
+}
+.box:hover{
+    background-color: blue;
+    padding: 10px;
+    transform: rotate(90deg);
+}
