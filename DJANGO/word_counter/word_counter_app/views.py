@@ -5,6 +5,6 @@ from django.http import HttpResponse
 def form(request):
     return render(request,'form.html')
 def counter(request):
-    words=request.GET['words']
+    words=request.POST['words']
     amountOfWords=len(words.split())
     return render(request,'counter.html',{'amount':amountOfWords})

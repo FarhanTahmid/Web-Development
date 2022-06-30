@@ -14,9 +14,9 @@
     </head>
     <body>
         <H1>INPUT YOUR TEXT BELOW</h1>
-        <form method="" action="counter">
+        <form method="POST" action="counter">
+            {% csrf_token %}
         <textarea name="words" rows="20" cols="50"></textarea><br>
         <input type="submit"/>
-        <script src="" async defer></script>
     </body>
 </html>
