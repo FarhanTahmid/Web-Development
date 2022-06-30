@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,10 +12,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
-        <H1>INPUT YOUR TEXT BELOW</h1>
+        <h1>INPUT YOUR TEXT BELOW</h1>
         <form method="POST" action="counter">
             {% csrf_token %}
         <textarea name="words" rows="20" cols="50"></textarea><br>
