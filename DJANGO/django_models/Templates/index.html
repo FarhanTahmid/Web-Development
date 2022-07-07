@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hi this is {{feature.name}}, I am an {{feature.detail}} and my id is {{feature.id}}</h1>
+    {% for feature in feature %}
+        <h1>hi this is {{feature.name}}, I am {{feature.details}}<br></h1>
+    {% endfor %}
 </body>
 </html>
