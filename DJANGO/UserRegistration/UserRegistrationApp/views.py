@@ -47,3 +47,5 @@ def logged_in(request):
 def logout(request):
     auth.logout(request)
     return redirect('register')
+def post(request,pk):
+    return render(request,'post.html',{'pk':pk})
