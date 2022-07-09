@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.header{
+    text-align: center;
+    font-size: 40px;
+}
+.head{
+    display: flex;
+}
+.intro{
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.intro .intro_name{
+    font-size: 50px;
+}
+.intro .intro_phoneNumber{
+    margin-left: 7px;
+}
+.intro_infos{
+    display: flex;
+}
+.intro_infos .phone_icon{
+    margin-top: -1px;
+    width: 20px;
+    height: 20px;
+}
+.intro_infos .mail_icon{
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+}
+.intro_mail{
+    margin-left: 7px;
+}
+.intro_links{
+    margin-top: 20px;
+}
+.intro_links .github_icon{
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+}
+.intro_links .linkedin_icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 36px;
+}
+.intro_links .github_link{
+    margin-top: -1px;
+    margin-left: 7px;
+    color: black;
+}
+.intro_links .linkedin{
+    margin-left: 5px;
+}
+.photocontainer{
+    float: right;
+    margin-top: 50px;
+    margin-left: 1100px;
+    border: 200px,265 px;
+    border-style: solid;
+}
+.photo{
+    margin-top: 3px;
+    width: 200px;
+    height: 265px;
+}
+.middle_part{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.titletile{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    border-style: outset;
+    border-width: 3px;
+    overflow: hidden;
+}
+.middle_part .description h3{
+    display: inline-block;
+    margin-top: 1px;
+}
+.middle_part .description .degree_name{
+    margin-top: 1px;
+}
+.middle_part .description .start_end_date{
+    margin-left: 150px;
+}
+.middle_part .technical_skill li{
+    margin-top: 5px;
+}
+.middle_part .achievements li{
+    margin-top: 5px;
+}
+.middle_part .co_curricular_experience .cocurricular_works{
+    display: flex;
+}
+.middle_part .co_curricular_experience .cocurricular_works span{
+    margin-left: 30px;
+}
+.middle_part .recent_projects .projectContainers{
+    display: flex;
+    
+}
+.middle_part .recent_projects .projectContainers span{
+    margin: 90px;
+    border: 3px;
+    border-style: outset;
+}
+.middle_part .recent_projects .projectContainers span h4{
+    text-align: center;
+}
+.middle_part .recent_projects .projectContainers span .projectPicture{
+    width: 250px;
+    height: 140px;
+}
+
+.middle_part .recent_projects .projectContainers  :hover{
+    padding: 10px;
+    transition-property: padding;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    
+}
