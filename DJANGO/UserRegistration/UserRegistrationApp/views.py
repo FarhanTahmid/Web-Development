@@ -44,3 +44,6 @@ def homepage(request):
 
 def logged_in(request):
     return render(request,'loggedin.html')
+def logout(request):
+    auth.logout(request)
+    return redirect('register')

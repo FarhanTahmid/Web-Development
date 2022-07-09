@@ -2,7 +2,7 @@
 {% for message in messages %}
 <h3 style="color:red">{{message}}</h3>
 {% endfor %}
- 
+
 <form action="homepage" method="POST">
     {% csrf_token %}
     <p>Username:</p>
