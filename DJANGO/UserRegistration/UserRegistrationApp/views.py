@@ -29,4 +29,18 @@ def userRegistration(request):
         return render(request,'userRegistration.html')
 
 def homepage(request):
-    return render(request,'homepage.html')
+    if request.method=='POST':
+        username=request.POST['username']
+        password=request.POST['password']
+        user=auth.authenticate(username=username,password=password)
+        if user is not None:
+            auth.login(request,user)
+            return redirect('logged_in')
+        else:
+            messages.info(request,'Credentials given are Wrong!')
+            return redirect('homepage')
+    else:
+        return render(request,'homepage.html')
+
+def logged_in(request):
+    return render(request,'loggedin.html')
