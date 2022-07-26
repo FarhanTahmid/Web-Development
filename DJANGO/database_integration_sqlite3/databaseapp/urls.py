@@ -7,5 +7,5 @@ urlpatterns = [
     #Include default auth urls
     path('', include('django.contrib.auth.urls')),
     #Registration page
-    path('',views.showpage,name='databasepage'),
+    path('',views.showpage,name='signup'),
 ]
