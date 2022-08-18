@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Withdraw Complaint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'course_drop.css' %}">
+  </head>
+  <body>
+    <section class = "course">
+      <div class="content">
+        <h2>Withdraw Complaint</h2>
+      </div>
+        <div class="course_drop_form">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="inputBox">
+              <label for="myfile">Please input complaint ID:</label>
+              <input type="text" name="courseID" required="required">
+              <span>Complaint ID</span>
+            </div>
+            <div class="inputBox">
+              <label for="myfile">Reasons for withdrawal:</label>
+              <textarea required="required" name="courseID"></textarea>
+              <span>Reasons</span>
+            </div>
+            <div class="inputBox">
+              <a href="{% url 'University:menu' %}"><input type="submit" name="" value="Submit"></a>
+            </div>
+          </form>
+        </div>
+    </section>
+  </body>
+</html>

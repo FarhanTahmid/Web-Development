@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Complaint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'course_add.css' %}">
+  </head>
+  <body>
+    <section class = "course">
+      <div class="content">
+        <h2>Register Complaint</h2>
+        <p>Please input information about the bully only</p>
+      </div>
+        <div class="course_add_form">
+          <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="inputBox">
+              <input type="text" name="bullyname" required="required">
+              <span>Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="contact" required="required">
+              <span>Contact no.</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="email" required="required">
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="facebookLink" required="required">
+              <span>Facebook link</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="instaLink" required="required">
+              <span>Instagram link</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="linkedinLink" required="required">
+              <span>LinkedIn link</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="snapLink" required="required">
+              <span>Snapchat ID</span>
+            </div>
+            <label for="myfile">Please upload evidence:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <div class="inputBox">
+              <input type="submit" name="" value="Submit">
+            </div>
+          </form>
+        </div>
+    </section>
+  </body>
+</html>

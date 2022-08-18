@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The NaughtyList</title>
+  </head>
+  <body>
+
+    <h1>The NaughtyList</h1>
+    <div class="banner">
+      <div>
+        <ul>
+          <li><a href="{% url 'University:course_registration' %}">Search Digital Profile</a></li>
+          <li><a href="{% url 'University:course_add' %}">Register Cyberbullying Complaint</a></li>
+          <li><a href="{% url 'University:course_drop' %}">Withdraw Complaint</a></li>
+          <li><a href="{% url 'University:personal_information' %}">Personal Information</a></li>
+          <li><a href="{% url 'University:results' %}">About Us</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </body>
+</html>
