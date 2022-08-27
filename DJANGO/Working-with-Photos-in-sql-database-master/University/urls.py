@@ -16,5 +16,6 @@ urlpatterns = [
     path('course_registration',views.course_registration,name='course_registration'),
     path('personal_information',views.personal_information,name='personal_information'),
     path('results',views.results,name='results'),
+    path('image',views.image,name='image'),
     
 ]

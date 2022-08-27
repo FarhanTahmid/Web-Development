@@ -1,5 +1,6 @@
 
 from pdb import line_prefix
+from sqlite3 import Cursor
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User,auth
 from django.contrib.auth.forms import UserCreationForm
@@ -9,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 from django.core import serializers
 from django.db import models
 
-from .models import OfferedCourse, Grade, CourseRegistrations
+from .models import OfferedCourse, Grade, CourseRegistrations,Image
 
 from . import courseadd
 from .import studentRegistration
@@ -81,7 +82,7 @@ def course_add(request):
         snapLink=request.POST['snapLink']
         
         file=request.FILES.get('myfile')
-        
+        print(type(file))
         #database connection to the app
         db_cursor=connections['default'].cursor()
         
@@ -118,4 +119,17 @@ def results(request):
     grades = Grade.objects.filter(owner=request.user).order_by('date_added')
     context = {'grades':grades}
     return render(request, 'results.html',context)
+
+def image(request):
+    
+    if request.method=="POST":
+        file=request.FILES['files']
+        image=Image.objects.get(name="farhan2")
+            
+        image.save()
+    
+    # context= {'imagefile': file,
+              
+    # }
+    return render(request,'image.html')
 

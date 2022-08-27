@@ -44,6 +44,12 @@ class Complains(models.Model):
     instaid=models.CharField(max_length=100,verbose_name="Instagram ID")
     linkedinid=models.CharField(max_length=100,verbose_name="Linkedin ID")
     snapid=models.CharField(max_length=100,verbose_name="Snapchat ID")
-    prove=models.ImageField(null=True,blank=True,upload_to='proves/')
-    
+    prove=models.ImageField(upload_to='proves/')
+
+class Image(models.Model):
+    name= models.CharField(max_length=500)
+    imagefile= models.FileField(upload_to='images/', null=True, verbose_name="")
+
+    def __str__(self):
+        return self.name + ": " + str(self.imagefile)
     
