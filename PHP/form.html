@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="database_connection.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="username">Username: </label>
+        <input type="text" id="nusername" name="username" ><br><br>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="password" required><br><br>
+        <label for="re-pass">Re-type Password: </label>
+        <input type="password" id="re-pass" name="re-pass" required><br><br>
+        <div class="checkbox-group required">
+            <p>Gender:   
+            <input type="radio" name="gender" value="Male" required>Male
+            <input type="radio" name="gender"value="Female">Female
+            <input type="radio" name="gender" value="other">Other
+            </p>
+        </div>
+        <label for="contact">Contact no: </label>
+        <input type="number" id="contact" name="contact" ><br><br>
+        <label for="re-pass">Email: </label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="cancel" value="Cancel">
+        
+        
+        
+
+        
+    </form>
+</body>
+</html>
