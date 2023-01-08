@@ -1,0 +1,92 @@
+:root {
+  --MainCardBGHeight: 85vh;
+  --MainCardBGWidth: 70vw;
+  --CardOneHeight: 75vh;
+  --CardOneWidth: 30vw;
+  --CardTwoHeight: 35vh;
+  --CardTwoWidth: 30vw;
+  --CardThreeHeight: 35vh;
+  --CardThreeWidth: 30vw;
+}
+
+/* this is for the nav bar start*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(27, 96, 139),
+    rgb(16, 146, 206),
+    rgb(194, 220, 245),
+    rgb(255, 255, 255)
+  );
+}
+
+body {
+  z-index: 0;
+}
+
+.Container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mainPage .ieee_background {
+  text-shadow: 10px 10px rgba(118, 153, 201, 0.073);
+  position: absolute;
+  top: 15vh;
+  right: 5vh;
+  display: flex;
+  font-size: 30vh;
+  font-weight: 700;
+  color: rgba(69, 142, 184, 0.58);
+  /* z-index: 5; */
+  /* rotate: 330deg; */
+  /* hha */
+}
+
+.mainPage .insb_background {
+  text-shadow: 10px 10px rgba(5, 66, 151, 0.073);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: -12vh;
+  left: 0vh;
+  display: flex;
+  font-size: 20vh;
+  font-weight: 700;
+  color: rgba(53, 125, 167, 0.58);
+ 
+}
+
+.MainCardBG {
+  padding-left: 30px;
+  padding-right: 10px;
+  z-index: 2;
+  position: relative;
+
+  height: 80vh;
+  width: 70vw;
+  /* top: 9.5vh; */
+  left: 2vw;
+  height: var(--MainCardBGHeight);
+  width: var(--MainCardBGWidth);
+  /* background-color: rgba(55, 50, 50, 0.082); */
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.249);
+
+  background: linear-gradient(to right, #ffffff8e, #ffffff74);
+}
+
+

@@ -1,0 +1,161 @@
+.twoThreeContainer {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.CardTwo {
+  z-index: 3;
+  margin-right: 10px;
+  position: relative;
+  padding-top: 2px;
+  width: auto;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+  padding-bottom: 15px;
+}
+
+.PersonalInfo {
+  padding-left: 30px;
+  position: relative;
+  top: -8px;
+}
+
+.PersonalInfo h1 {
+}
+
+.breakLine {
+  width: inherit;
+  height: 2px;
+  background-color: black;
+}
+
+.personal {
+  position: relative;
+  top: -18px;
+}
+
+.personalInfoContainer {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.personalInfoContainer p:nth-child(2n-1) {
+  font-weight: bold;
+}
+
+.personalInfoContainer p:nth-child(2n) {
+  border-bottom: 2px solid;
+}
+
+.DOB p {
+  display: inline;
+}
+
+.Gender p {
+  display: inline;
+}
+
+.Major p {
+  display: inline;
+}
+
+.Joining-Session p {
+  display: inline;
+}
+
+.address {
+  height: auto;
+  width: inherit;
+}
+
+.address p {
+  display: inline;
+}
+
+.CardThree {
+  z-index: 3;
+  position: relative;
+  margin-right: 10px;
+  padding-top: 2px;
+
+  height: var(--CardTwoHeight);
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+}
+
+.IEEEInfoText {
+  padding-left: 30px;
+  position: relative;
+  top: -6px;
+}
+
+.IEEEInfoText h1 {
+}
+
+.IEEE {
+  position: relative;
+  top: -18px;
+}
+
+.IEEEInfoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.IEEEInfoContainer p:nth-child(n) {
+  display: inline;
+}
+
+.IEEEInfoContainer p:nth-child(2n-1) {
+  font-weight: bold;
+}
+
+.IEEEInfoContainer p:nth-child(2n) {
+  border-bottom: 2px solid black;
+}
+
+.Team-name {
+}
+
+.Position {
+}
+
+.Account-Status {
+}
+
+.Renewal-Due {
+}
+
+.editFormBG {
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(97, 93, 93, 0.699);
+}
+
+.editForm {
+  position: absolute;
+  z-index: 10;
+  padding: 10px;
+  background: red;
+  top: 10%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,45 @@
+@media only screen and (max-width: 768px) {
+
+    .MainCardBG {
+      padding-left: 10px;
+      flex-direction: column;
+      width: 70vh;
+      height: auto;
+      gap: 20px;
+    }
+  
+    .CardOne {
+      top: 10px;
+      left: 0;
+      width: auto;
+      height: auto;
+    }
+  
+    .leftPart {
+      height: 200px;
+      width: 100px;
+      left: -10px;
+    }
+  
+    .rightPart {
+      width: 150px;
+      height: 200px;
+      left: 20px;
+    }
+  
+  
+    .editButton {
+      top: 15px;
+      right: 40px;
+    }
+  
+    .CardTwo {
+      top: 10px;
+      width: 90vw;
+    }
+  
+    .personalInfoContainer {
+      grid-template-columns: 1fr;
+      width: fit-content;
+    }
+  }

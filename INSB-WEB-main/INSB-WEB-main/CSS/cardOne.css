@@ -1,0 +1,192 @@
+.CardOne {
+  padding: 5px;
+  z-index: 3;
+  position: relative;
+
+  height: fit-content;
+
+  width: auto;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px #0000003a;
+}
+
+/* .picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .pic {
+  border-radius: 50px;
+} */
+
+.primaryInfo {
+  display: flex;
+  contain: layout;
+
+  padding: 20px;
+
+}
+
+.leftPart {
+  position: relative;
+  height: 200px;
+  width: 170px;
+  padding-left: 10px;
+}
+
+.myProfileText {
+  position: relative;
+  top: -10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.myProf {
+  position: relative;
+  top: -18px;
+}
+
+.NameContainer {
+  position: relative;
+  top: -10px;
+}
+
+.name {
+  height: fit-content;
+  width: inherit;
+}
+
+.name p {
+  width: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.displayName {
+  width: inherit;
+  height: fit-content;
+  position: relative;
+  top: -13px;
+}
+
+.displayName p {
+  width: inherit;
+  height: auto;
+  padding-left: 3px;
+  /* border-bottom: 1px solid black; */
+
+  font-size: 20px;
+  overflow: auto;
+}
+
+.ContactContainer {
+  position: relative;
+  top: -20px;
+}
+
+.contact p {
+  font-weight: bold;
+}
+
+.displayContact p {
+  position: relative;
+  top: -13px;
+
+  /* border-bottom: 1px solid black; */
+}
+
+.rightPart {
+  position: relative;
+
+  width: 170px;
+  height: 200px;
+  left: 40px;
+  top: 50px;
+}
+
+.NsuMailContainer {
+  position: relative;
+
+  top: -10px;
+}
+
+.nsuMail {
+  font-weight: bold;
+}
+
+.displayNsuMail p {
+  position: relative;
+  top: -10px;
+  /* border-bottom: 1px solid black; */
+}
+
+.IEEEMailContainer {
+  position: relative;
+
+  top: -20px;
+}
+
+.IEEEMail {
+  font-weight: bold;
+}
+
+.displayIEEEMail p {
+  position: relative;
+  top: -10px;
+  /* border-bottom: 1px solid black; */
+}
+
+.IEEEIdContainer {
+  position: relative;
+
+  top: -26px;
+}
+
+.IEEEId {
+  font-weight: bold;
+}
+
+.diplayIEEEId p {
+  position: relative;
+  top: -10px;
+  /* border-bottom: 1px solid black; */
+}
+
+.editButton {
+  position: relative;
+  padding: 20px;
+}
+
+.editButton button {
+  margin-left: 20%;
+  width: 100px;
+  height: 30px;
+
+  border-radius: 40px;
+
+  background: #fac400;
+  border: none;
+  transition: 0.6s;
+  font-weight: bold;
+}
+
+.editButton button:hover {
+  background: black;
+  color: #ffffff;
+}
+
+.editForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.editMyProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

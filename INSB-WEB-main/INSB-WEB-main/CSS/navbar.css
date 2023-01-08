@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.navLi {
+  color: whitesmoke;
+}
+.navLi:hover {
+  color: #ffc107;
+  transition: 0.2s;
+}
+
+.fb,
+.twitter,
+.yt,
+.insta,
+.linkedin,
+.footer_mail {
+  color: whitesmoke;
+}
+.fb:hover {
+  color: #1977f3;
+  transition: 0.2s;
+}
+.insta:hover {
+  color: #f60c52;
+  transition: 0.2s;
+}
+.linkedin:hover {
+  color: #0077b5;
+  transition: 0.2s;
+}
+.yt:hover {
+  color: #fe0202;
+  transition: 0.2s;
+}
+.twitter:hover {
+  color: #1da1f2;
+  transition: 0.2s;
+}
+.footer_mail:hover {
+  color: #ffc936;
+  transition: 0.2s;
+}
+.event {
+  scale: 1;
+}
+.event:hover {
+  scale: 1.01;
+  background-color: rgba(44, 167, 216, 0.1);
+  transition: 0.2s;
+}
