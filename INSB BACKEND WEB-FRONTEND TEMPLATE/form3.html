@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch-Event Creation Form- PT3</title>
+</head>
+<body>
+    <h1>Probable Venue Selection and Permission Needs</h1>
+    <form action="" method="POST">
+        <label for="">Select Probable Venues For the Event</label><br>
+        <select name="event_venues" multiple>
+            {% for venue  in venues %}
+                <option value={{venue.id}}>{{venue.venue_name}}</option>
+            {% endfor %}
+            
+            
+        </select>
+        <br><br>
+
+        <label for="">Select Permission Criterias For the Event</label><br>
+        <select name="collaboration_with" multiple>
+            <option value="null" name="permission_criteria" selected>----------</option>
+            {% for permission in permission_criterias %}{% endfor %}
+            <option value={{permission.id}} name="permission_criteria">{{permission.permission_name}}</option>
+            
+        </select>
+        <br><br>
+        <input type="submit" value="Go Back" name="go_back">
+        <input type="submit" value="Next" name="next">
+    </form>
+</body>
+</html>
